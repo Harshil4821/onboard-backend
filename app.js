@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cors({
     // origin: ["http://localhost:3003", "https://onboard-harshil.web.app"],
-    origin: "http://localhost:3003, https://onboard-10.web.app",
+    origin: "https://onboard-10.web.app",
     credentials: true
 }))
 
