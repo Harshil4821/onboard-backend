@@ -28,9 +28,9 @@ const Login = (req, res)=>{
                         if(data?.length>0 || data !== null){
                             res.cookie("ob_h_a", token , {
                                 expires: new Date(Date.now() + (30*24*60*60*1000)),
-                                // httpOnly: true,
-                                // secure: true,
-                                // sameSite: 'none',
+                                httpOnly: true,
+                                secure: true,
+                                sameSite: 'none',
                                 path: "/",
                                 // domain: "shielded-lowlands-66092.herokuapp.com"
                             })
