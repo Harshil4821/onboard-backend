@@ -4,7 +4,7 @@ const Logout = (req, res)=>{
         httpOnly: true,
         secure: true,
         sameSite: 'none',
-        domain: "localhost"
+        // domain: "localhost"
     })
     res.json({
         status: true,
