@@ -43,6 +43,8 @@ app.get("/get/company", checkCookie, require("./routers/Get Company/module"));
 
 app.get("/get/history", checkCookie, require("./routers/getHistoryTask/module"));
 
+app.post("/get/quote", checkCookie, require("./routers/getQuote/module"));
+
 app.listen(PORT, (err)=>{
     if(err){
         console.log("Error while executing the code.");
